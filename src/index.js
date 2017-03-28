@@ -29,7 +29,7 @@ client.getManifest({ref: tagOrDigest}, (err) => {
   client.close()
 
   if (!program.quiet) {
-    console.log(err || 'Docker images exists!')
+    console.log(err || `The docker image at "${program.repo}" exists`)
   }
 
   process.exit(err ? 1 : 0)
