@@ -1,6 +1,6 @@
 {
   "name": "docker-image-exists",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Check if a docker image exists in the docker hub registry",
   "main": "dist/index.js",
   "repository": "https://github.com/mishguruorg/docker-image-exists",
