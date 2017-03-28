@@ -1,0 +1,43 @@
+{
+  "name": "docker-image-exists",
+  "version": "1.0.0",
+  "description": "Check if a docker image exists in the docker hub registry",
+  "main": "dist/index.js",
+  "repository": "https://github.com/mishguruorg/docker-image-exists",
+  "author": "George Czabania <george@mish.guru>",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^2.9.0",
+    "docker-registry-client": "^3.2.6"
+  },
+  "devDependencies": {
+    "@mishguru/package": "^1.1.1"
+  },
+  "bin": {
+    "docker-image-exists": "./bin/docker-image-exists"
+  },
+  "scripts": {
+    "build": "pkg-build",
+    "lint": "pkg-lint"
+  },
+  "babel": {
+    "presets": [
+      [
+        "env",
+        {
+          "targets": {
+            "node": "current"
+          }
+        }
+      ]
+    ],
+    "plugins": [
+      [
+        "transform-object-rest-spread",
+        {
+          "useBuiltIns": true
+        }
+      ]
+    ]
+  }
+}
